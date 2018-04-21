@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.24)  21 APR 2018 14:22
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.24)  21 APR 2018 20:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,22 +384,26 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 File: imgs/Multiqueue.png Graphic file (type bmp)
 <imgs/Multiqueue.png>
  [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+Overfull \hbox (11.40363pt too wide) in paragraph at lines 118--119
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
 
-(./MutliAccessQueue.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 138.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 138.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
+ (./MutliAccessQueue.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 184.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 184.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
  ) 
 Here is how much of TeX's memory you used:
- 10274 strings out of 493007
- 144029 string characters out of 6137965
+ 10306 strings out of 493007
+ 144473 string characters out of 6137965
  264934 words of memory out of 5000000
- 14145 multiletter control sequences out of 15000+600000
+ 14177 multiletter control sequences out of 15000+600000
  7936 words of font info for 38 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 34i,11n,60p,662b,1145s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,60p,662b,1755s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on MutliAccessQueue.xdv (4 pages, 77248 bytes).
+Output written on MutliAccessQueue.xdv (5 pages, 114992 bytes).

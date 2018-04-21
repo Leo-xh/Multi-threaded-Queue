@@ -1,13 +1,13 @@
 # Fdb version 3
-["xdvipdfmx"] 1524291750 "MutliAccessQueue.xdv" "MutliAccessQueue.pdf" "MutliAccessQueue" 1524291752
-  "MutliAccessQueue.xdv" 1524291750 77248 62db36c522d902606722150e09f5a060 "xelatex"
+["xdvipdfmx"] 1524314869 "MutliAccessQueue.xdv" "MutliAccessQueue.pdf" "MutliAccessQueue" 1524314870
+  "MutliAccessQueue.xdv" 1524314868 114992 9cb4b4fcc13434b74788585d2cef726f "xelatex"
   (generated)
   "MutliAccessQueue.pdf"
-["xelatex"] 1524291749 "MutliAccessQueue.tex" "MutliAccessQueue.xdv" "MutliAccessQueue" 1524291752
-  "MutliAccessQueue.aux" 1524291750 1759 6e33f92d8acf63786aaee0dcccd49855 ""
-  "MutliAccessQueue.out" 1524291750 204 969e5f61fee230b4142ca17e41f56221 ""
-  "MutliAccessQueue.tex" 1524291748 6326 58c0dd9a248265dd9b38c5977b66bc21 ""
-  "MutliAccessQueue.toc" 1524291750 275 5e3d9b41f9c4d5b7ed8e83ff25621551 ""
+["xelatex"] 1524314867 "MutliAccessQueue.tex" "MutliAccessQueue.xdv" "MutliAccessQueue" 1524314870
+  "MutliAccessQueue.aux" 1524314868 1759 531c959111e7c507dabcf4e4715bccd8 ""
+  "MutliAccessQueue.out" 1524314868 204 969e5f61fee230b4142ca17e41f56221 ""
+  "MutliAccessQueue.tex" 1524314867 7766 0357d823020343919e78db7071e745ae ""
+  "MutliAccessQueue.toc" 1524314868 275 4225b9c934e2cd02dfc08b4069d9a3a8 ""
   "e:/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1521817468 3332 103109f5612ad95229751940c61aada0 ""
   "e:/texlive/2017/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1521820836 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "e:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1521815998 1004 54797486969f23fa377b128694d548df ""
@@ -71,8 +71,8 @@
   "e:/texlive/2017/texmf-var/web2c/xetex/xelatex.fmt" 1521821039 3705165 76fa307b834d8ad65d168b03599fd034 ""
   "imgs/Multiqueue.png" 1524288920 37199 e1e601f9cd59011c467d6b8457e79187 ""
   (generated)
-  "MutliAccessQueue.aux"
-  "MutliAccessQueue.xdv"
-  "MutliAccessQueue.toc"
-  "MutliAccessQueue.out"
   "MutliAccessQueue.log"
+  "MutliAccessQueue.aux"
+  "MutliAccessQueue.out"
+  "MutliAccessQueue.toc"
+  "MutliAccessQueue.xdv"

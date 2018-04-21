@@ -83,7 +83,52 @@
 		\item In order to divide a loop to multiple threads, the loop control variables should be initialized differently and cover all the loop range. The method I used here is dividing the loop range into 64 equal parts, except for the last one.
 		\item If a thread want to extract a element from the queue, it must wait until the queue is not empty. I use a spin wait here.
 	\end{enumerate}
+	\par I have also implemented the queue using OpenMP interfaces, and with OpenMp, it is easier to implement the program that uses the queue, but the work to implement the queue itself is not easier, let's show the declaration of the multi-access queue.
+	\begin{lstlisting}[language=c++, numbers=left,	numberstyle=\tiny,basicstyle=\small]
+	template<typename T>
+	class MultiAccessQueue
+	{
+	public:
+	  MultiAccessQueue();
+	  ~MultiAccessQueue();
+	  bool empty();
+	  size_t size();
+	  T front();
+	  T back();
+	  void push(T ele);
+	  void pop();
 
+	private:
+	  std::queue<T> oriQue;
+	  omp_lock_t headLock;
+	  omp_lock_t tailLock;
+	};
+	
+	\end{lstlisting}
+	And the trunk of the program that uses the queue is shown below.
+	\begin{lstlisting}[language=c++, numbers=left,	numberstyle=\tiny,basicstyle=\small]
+	omp_set_num_threads(THREADS);
+	omp_set_nested(1);
+	double start, stop;
+	start = omp_get_wtime();
+	#pragma omp parallel sections
+	{
+	    #pragma omp section
+		{
+	    printf("Totally %d threads\n", omp_get_num_threads());
+		}
+	    #pragma omp section
+		{
+		  insert();
+		}
+	    #pragma omp section
+		{
+		  extract();
+		}
+	}
+	stop = omp_get_wtime();
+	\end{lstlisting}
+	Clearly, the implementation is more concise that using pthread.
 	% section implementation_code (end)
 	\section{Result} % (fold)
 	\label{sec:result}
@@ -133,6 +178,7 @@
 	\item The task per thread does is easy and low load in comparison. 
 	\item The CPU resource is wasted in spin wait, and thus the efficiency is lower.
 	\end{enumerate}
+	\par By the way, it is even slower when using OpenMp, the reason may be that it is hard to control the critical sections, and the resource is wasted when waiting.
 	% section conclusion (end)
 
 \end{document}
